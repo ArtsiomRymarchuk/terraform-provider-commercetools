@@ -86,6 +86,7 @@ func New(version string) func() *schema.Provider {
 				"commercetools_category":           resourceCategory(),
 				"commercetools_type":               resourceType(),
 				"commercetools_product_discount":   resourceProductDiscount(),
+				"commercetools_product":            resourceProduct(),
 			},
 		}
 		p.ConfigureContextFunc = providerConfigure(version, p)
